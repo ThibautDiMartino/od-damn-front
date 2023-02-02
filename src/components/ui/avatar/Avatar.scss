@@ -1,0 +1,33 @@
+// @import "../../scss/variables";
+// @import "bulma/sass/utilities/functions";
+
+$avatar-sizes: (
+  "small": 50px,
+  "regular": 75px,
+  "large": 100px,
+) !default;
+
+.od-avatar {
+  border-radius: 50%;
+  border: 1px solid black;
+
+  img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    margin: 0;
+  }
+  @each $var in $avatar-sizes {
+    $prop: nth($var, 1);
+    $value: nth($var, 2);
+    &.is-#{$prop} {
+      width: $value;
+      height: $value;
+      img {
+        width: $value;
+        height: $value;
+      }
+    }
+  }
+}

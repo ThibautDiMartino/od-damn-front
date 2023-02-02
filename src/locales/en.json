@@ -1,0 +1,68 @@
+{
+  "oh-damn": {
+    "logo": "",
+    "name": "Oh Damn!"
+  },
+  "pages": {
+    "connect": {
+      "signup": {
+        "title": "Create your account",
+        "email": {
+          "label": "Email",
+          "placeholder": "Hint: name@example.com"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Password"
+        },
+        "remember-me": "Remember me",
+        "submit": "Create my account",
+        "already-have-an-account": "Log in"
+      },
+      "login": {
+        "title": "Log in",
+        "email": {
+          "label": "Email",
+          "placeholder": "Hint: name@example.com"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Password"
+        },
+        "remember-me": "Remember me",
+        "submit": "Log in",
+        "dont-have-an-account": "Create my account"
+      }
+    }
+  },
+  "common": {
+    "form-errors": {
+      "auth/email-already-exists": "Email already exists",
+      "auth/email-already-in-use": "Email already in use",
+      "auth/id-token-expired": "Id token expired",
+      "auth/id-token-revoked": "Id token revoked",
+      "auth/internal-error": "Internal error",
+      "auth/invalid-credential": "Invalid credential",
+      "auth/invalid-display-name": "Invalid nickname",
+      "auth/invalid-email": "Invalid email",
+      "auth/invalid-id-token": "Invalid id token",
+      "auth/invalid-password": "Invalid password",
+      "auth/wrong-password": "Wrong password",
+      "auth/invalid-phone-number": "Invalid phone number",
+      "auth/invalid-photo-url": "Invalid photo url",
+      "auth/invalid-provider-data": "Invalid provider data",
+      "auth/invalid-session-cookie-duration": "Invalid session cookie duration",
+      "auth/invalid-uid": "Invalid uid",
+      "auth/missing-continue-uri": "Missing continue uri",
+      "auth/missing-uid": "Missing uid",
+      "auth/missing-oauth-client-secret": "Missing oauth client secret",
+      "auth/phone-number-already-exists": "Phone number already exists",
+      "auth/session-cookie-expired": "Session cookie expired",
+      "auth/session-cookie-revoked": "Session cookie revoked",
+      "auth/uid-already-exists": "Uid already exists",
+      "auth/unauthorized-continue-uri": "Unauthorized continue uri",
+      "auth/user-not-found": "User not found",
+      "auth/too-many-requests": "Too many attemps"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../index.scss";
+
+$spacing-values: $spaces;
+
+$button-sizes: (
+  "small": 28px,
+  "regular": 40px,
+  "large": 48px,
+) !default;
+$button-font-sizes: (
+  "small": 7,
+  "regular": 6,
+  "large": 5,
+) !default;
+$button-paddings: (
+  "small": 9px 12px 9px 12px,
+  "regular": 12px 12px 12px 12px,
+  "large": 12px 12px 12px 12px,
+) !default;
+
+@function fontSize($size) {
+  @return map-get($spacing-values, $size);
+}
+
+.od-button {
+  height: 50px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  border: 0;
+  min-width: fit-content;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+
+  &.is-clickable {
+    cursor: pointer;
+  }
+
+  @each $sizeName, $sizeValue in $button-font-sizes {
+    &.is-#{$sizeName} {
+      @include fontSize($sizeValue);
+
+      height: map-get($button-sizes, $sizeName);
+      padding: map-get($button-paddings, $sizeName);
+    }
+  }
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  &.is-squared {
+    border-radius: 0.3125rem;
+  }
+}

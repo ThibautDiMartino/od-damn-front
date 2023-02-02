@@ -1,0 +1,508 @@
+@import "bulma/sass/utilities/functions";
+@import "../../index.scss";
+.account-layout {
+  background: inherit;
+}
+// h1 {
+//   color: #2d3041;
+// }
+// h2 {
+//   color: #2d3041;
+// }
+// p {
+//   color: #2d3041;
+// }
+// ul {
+//   color: #61dafb;
+// }
+// li {
+//   display: inline;
+// }
+// a {
+//   color: #0093db;
+// }
+/* 
+**
+** Topnav
+**
+*/ /* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(37, 37, 37);
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 2vw;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(87, 76, 76);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #2d3041;
+  color: white;
+}
+
+.topnav .user-icon {
+  width: 30px;
+  border-radius: 50%;
+  margin: 7px 15px;
+  cursor: pointer;
+}
+
+.topnav button {
+  background: rgb(37, 37, 37);
+  border: 0;
+  color: white;
+  flex: 1;
+  font-size: 17px;
+  font-family: inherit;
+  text-align: left;
+}
+
+.topnav button:hover,
+.topnav a:hover button {
+  color: #000000;
+  background: inherit;
+}
+
+.topnav .dropdown {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  position: absolute;
+  background: rgb(37, 37, 37);
+  right: 0;
+  z-index: 2;
+  transition: ease 1s;
+  padding-left: 0;
+}
+
+.topnav .dropdown.active {
+  display: flex;
+  opacity: 1;
+}
+
+.dropdown button,
+.dropdown li,
+.dropdown a {
+  cursor: pointer;
+}
+
+.dropdown li {
+  margin: auto;
+}
+
+.dropdown .drop-link {
+  width: 204px;
+}
+
+.dropdown a,
+.dropdown .drop-link {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
+  padding: 22px 32px;
+}
+
+.dropdown li:hover,
+.dropdown li:hover a,
+.dropdown li:hover button {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.dropdown button {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.dropdown span {
+  text-align: left;
+  flex: 1;
+  margin: auto;
+  width: 100px;
+}
+
+#profile,
+#settings {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 49px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0;
+  height: 84.9vh;
+  width: 100%;
+}
+
+#profile.active,
+#settings.active {
+  display: block;
+}
+
+.exit-modal {
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  cursor: pointer;
+  top: 30px;
+  right: 350px;
+  border: 0;
+  background: white;
+}
+
+#profile .page-wrapper,
+#settings .page-wrapper {
+  background: inherit;
+}
+
+#profile .page-inner,
+#settings .page-inner {
+  background: white;
+  width: 50%;
+  height: calc(100% - 10px);
+  margin: auto;
+  padding: 5px 0;
+  border-radius: 25px;
+}
+
+.profile-wrapper,
+.settings-wrapper {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 50% 50%;
+}
+
+.profile-pic img {
+  width: 150px;
+  margin: 10px auto;
+}
+
+/* 
+**
+** Body Home
+**
+*/
+
+.right {
+  float: right;
+}
+
+.App-form {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.buttton {
+  background-color: white;
+  font-size: 10px 24px;
+  border-radius: 12%;
+  border: 2px solid #36374e;
+}
+
+.fit-picture {
+  /* margin-top: 10%; */
+  width: 450px;
+  border-radius: 25%;
+}
+
+/* 
+**
+** Form Signup
+**
+*/
+
+/* 
+**
+** 404
+**
+*/
+
+.nf-wrapper {
+  background: url("../../static/404.png") no-repeat center;
+  background-size: cover;
+  height: 92vh;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nf-inner {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.nf-inner h1 {
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 300px;
+  width: 500px;
+}
+
+.nf-inner small {
+  margin: 0;
+}
+
+/* 
+**
+** Dashboard
+**
+*/
+
+// .page-wrapper {
+//   background: #cdd4db;
+//   height: 81.3vh;
+//   padding: 10px 25px;
+// }
+
+.account-dashboard {
+  min-height: 80vh;
+  margin-top: 25px;
+  display: flex;
+  height: calc(100% - 10px);
+  flex-direction: column;
+  justify-content: space-between;
+
+  .tab-nav {
+    display: flex;
+    justify-content: center;
+    min-width: 360px;
+    width: 50%;
+    margin: 0 auto;
+    .tab {
+      width: 30%;
+      border-radius: 25px 25px 0 0;
+      padding: 20px;
+      border-bottom: 2px solid;
+      border-color: inherit;
+
+      &.is-active {
+        box-shadow: 0px -2px 1px;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .tab-content {
+    flex: 1;
+    min-width: 360px;
+    width: 50%;
+    margin: 0 auto;
+    #History,
+    #Dashboard,
+    #Statistics {
+      display: none;
+      flex-direction: column;
+      max-width: 360px;
+      padding: 15px;
+      &.is-active {
+        display: flex;
+      }
+    }
+  }
+
+  .friends {
+    min-width: 360px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 10px 0 10px;
+    box-shadow: 0px -4px 13px -3px #000000;
+    margin-bottom: 0;
+
+    .disconnected,
+    .connected {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      overflow: auto;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+    }
+    .disconnected img {
+      opacity: 0.5;
+    }
+  }
+}
+
+.page-inner section {
+  width: 33%;
+}
+
+#History {
+  text-align: start;
+}
+
+#History div {
+  margin: 10px 0;
+}
+
+.coins span,
+.ranking span {
+  font-size: 30px;
+}
+
+#History .user-icon {
+  width: 20px;
+}
+
+.game-history {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.history {
+  width: 100%;
+}
+
+.avatar {
+  margin: 10px auto;
+}
+
+.avatar img {
+  width: 100px;
+}
+
+.game-selector {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+  margin: auto;
+}
+
+.left-arrow {
+  border-width: 20px 40px 20px 0;
+  border-color: transparent #000000 transparent transparent;
+}
+
+.right-arrow {
+  border-width: 20px 0 20px 40px;
+  border-color: transparent transparent transparent #000000;
+}
+
+.game-selector img {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+}
+
+.games-wrapper {
+  height: 200px;
+}
+
+.play-btn {
+  width: 100%;
+  height: 50px;
+  flex: 1;
+}
+
+.play-btn input[type="button"] {
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.win,
+.lose,
+.draw {
+  width: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.draw {
+  border: 15px solid rgb(66, 165, 245);
+}
+
+.lose {
+  border: 15px solid rgb(255, 112, 67);
+}
+
+.win {
+  border: 15px solid rgb(156, 204, 101);
+}
+
+#stat {
+  height: 400px;
+}
+
+/* 
+**
+** Footer
+**
+*/
+
+.footer {
+  width: 100%;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  background-color: rgb(37, 37, 37);
+}
+
+.authors {
+  align-self: end;
+  padding: 10px 25px;
+  margin: auto 0;
+  width: 400px;
+  text-align: right;
+}
+
+.a-beautiful-heart {
+  fill: #ff1c4e;
+  width: 1em;
+  animation: love 5s ease infinite;
+  margin: 0 5px;
+}

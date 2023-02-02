@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: inherit;
+
+  .od-logo {
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    font-weight: bold;
+    letter-spacing: -7.5px;
+    font-size: 45px;
+
+    .O,
+    .D {
+      margin: 0;
+    }
+
+    .O {
+      width: fit-content;
+      color: red;
+      font-style: italic;
+    }
+  }
+  .user-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: inherit;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    height: 50px;
+    border-radius: 25px;
+    .display-name {
+      padding: 5px 15px;
+    }
+  }
+}
+
+.is-mobile {
+  .display-name {
+    display: none;
+  }
+}
+
+// @keyframes spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

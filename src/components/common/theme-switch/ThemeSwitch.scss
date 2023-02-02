@@ -1,0 +1,13 @@
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  .fa-moon {
+    color: grey;
+    margin-right: 10px;
+  }
+  .fa-sun {
+    color: orange;
+    margin-left: 10px;
+  }
+}

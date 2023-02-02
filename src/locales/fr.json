@@ -1,0 +1,68 @@
+{
+  "oh-damn": {
+    "logo": "",
+    "name": "Oh Damn!"
+  },
+  "pages": {
+    "connect": {
+      "signup": {
+        "title": "Créez votre compte",
+        "email": {
+          "label": "Email",
+          "placeholder": "Ex: nom@exemple.com"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Mot de passe"
+        },
+        "submit": "Créer mon compte",
+        "already-have-an-account": "Me connecter"
+      },
+      "login": {
+        "title": "Connectez-vous",
+        "email": {
+          "label": "Email",
+          "placeholder": "Ex: nom@exemple.com"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Mot de passe"
+        },
+        "remember-me": "Se souvenir de moi",
+        "submit": "Me connecter",
+        "dont-have-an-account": "Créer mon compte"
+      },
+      "remember-me": "Se souvenir de moi"
+    }
+  },
+  "common": {
+    "form-errors": {
+      "auth/email-already-in-use": "Email déjà utilisé",
+      "auth/email-already-exists": "Email déjà existant",
+      "auth/id-token-expired": "Id token expiré",
+      "auth/id-token-revoked": "Id token révoqué",
+      "auth/internal-error": "Erreur interne",
+      "auth/invalid-credential": "Identification invalide",
+      "auth/invalid-display-name": "Pseudo invalide",
+      "auth/invalid-email": "Email invalide",
+      "auth/invalid-id-token": "Id token invalide",
+      "auth/invalid-password": "Mot de passe invalide",
+      "auth/wrong-password": "Mot de passe incorrect",
+      "auth/invalid-phone-number": "Numéro de téléphone invalide",
+      "auth/invalid-photo-url": "Lien de photo invalide",
+      "auth/invalid-provider-data": "Données fournisseur invalides",
+      "auth/invalid-session-cookie-duration": "Durée de session cookie invalide",
+      "auth/invalid-uid": "Unique id invalide",
+      "auth/missing-continue-uri": "Lien de redirection requis",
+      "auth/missing-uid": "Unique id requis",
+      "auth/missing-oauth-client-secret": "Clé secrète utilisateur requise",
+      "auth/phone-number-already-exists": "Numéro de téléphone déjà utilisé",
+      "auth/session-cookie-expired": "Cookie de session expiré",
+      "auth/session-cookie-revoked": "Cookie de session révoqué",
+      "auth/uid-already-exists": "Unique id déjà utlisé",
+      "auth/unauthorized-continue-uri": "Lien de redirection non autorisé",
+      "auth/user-not-found": "Utilisateur non trouvé",
+      "auth/too-many-requests": "Trop de tentatives"
+    }
+  }
+}

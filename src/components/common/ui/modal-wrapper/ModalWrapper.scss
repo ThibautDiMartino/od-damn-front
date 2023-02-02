@@ -1,0 +1,10 @@
+.od-modal-wrapper {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background: transparent;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+}

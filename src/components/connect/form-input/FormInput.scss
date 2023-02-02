@@ -1,0 +1,14 @@
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &[for="remember"] {
+    flex-direction: row;
+    align-items: center;
+  }
+}

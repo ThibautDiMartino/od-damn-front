@@ -1,0 +1,39 @@
+.header-menu {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  height: 100vh;
+  right: 0;
+  background: inherit;
+  z-index: 1;
+
+  &.is-active {
+    display: block;
+  }
+
+  .menu-head {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+  }
+
+  section {
+    margin-left: 15px;
+    margin-right: 15px;
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      font-size: 25px;
+      .left-icon {
+        margin-right: 10px;
+      }
+      .label {
+        flex: 1;
+        text-align: left;
+      }
+    }
+  }
+}
